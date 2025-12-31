@@ -17,7 +17,7 @@ This repository demonstrates a full workflow:
 ---
 
 ## 📂 Repository Structure
-
+```bash
 AnsiblePlaybook/
 └── RADIUS.yml
 Screenshots/
@@ -27,7 +27,7 @@ Screenshots/
 chr.rsc
 hosts
 presentation.mp3
-
+```
 
 ---
 
@@ -62,14 +62,14 @@ pip3 install ansible
 ansible --version
 ```
 
-📡 4️⃣ Configure RADIUS Using Ansible
+Configure RADIUS Using Ansible
 ➤ hosts
 ```bash
 [mikrotik]
 10.28.144.142 ansible_user=admin ansible_password=abc@123 ansible_network_os=community.routeros.routeros ansible_connection=network_cli
 ```
 ➤ Playbook (AnsiblePlaybook/RADIUS.yml)
-
+```bash
 - name: Configure RADIUS on MikroTik
   hosts: mikrotik
   gather_facts: no
@@ -81,20 +81,25 @@ ansible --version
 ```
 
 ➤ Run
+```bash
 ansible-playbook -i hosts AnsiblePlaybook/RADIUS.yml
+```
 
 🔥 5️⃣ Hotspot Setup
 
 Add interface → set hotspot → export config:
+```bash
 /export file=chr.rsc
-
+```
 🌱 6️⃣ GitHub Setup (with PAT token)
+'''bash
 git init
 git add .
 git commit -m "splashnet-mikrotik-task"
 git branch -M main
 git remote add origin https://github.com/<username>/<repo>.git
 git push -u origin main
+```
 
 
 
