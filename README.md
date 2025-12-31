@@ -76,6 +76,7 @@ ansible --version
       community.routeros.command:
         commands:
           - /radius add address=35.227.71.209 secret=testing123 service=hotspot
+---
 
 ➤ Run
 ansible-playbook -i hosts AnsiblePlaybook/RADIUS.yml
