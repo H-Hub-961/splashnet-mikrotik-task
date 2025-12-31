@@ -64,9 +64,10 @@ ansible --version
 
 📡 4️⃣ Configure RADIUS Using Ansible
 ➤ hosts
+```bash
 [mikrotik]
 10.28.144.142 ansible_user=admin ansible_password=abc@123 ansible_network_os=community.routeros.routeros ansible_connection=network_cli
-
+```
 ➤ Playbook (AnsiblePlaybook/RADIUS.yml)
 
 - name: Configure RADIUS on MikroTik
