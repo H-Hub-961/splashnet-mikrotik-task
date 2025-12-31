@@ -93,7 +93,7 @@ Add interface → set hotspot → export config:
 /export file=chr.rsc
 ```
 🌱 6️⃣ GitHub Setup (with PAT token)
-'''bash
+```bash
 git init
 git add .
 git commit -m "splashnet-mikrotik-task"
