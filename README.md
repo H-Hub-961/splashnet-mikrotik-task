@@ -63,6 +63,7 @@ ansible --version
 ```
 
 Configure RADIUS Using Ansible
+
 ➤ hosts
 ```bash
 [mikrotik]
