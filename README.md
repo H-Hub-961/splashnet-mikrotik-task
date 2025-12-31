@@ -60,6 +60,7 @@ sudo apt update
 sudo apt install python3-pip python3-venv git -y
 pip3 install ansible
 ansible --version
+```
 
 📡 4️⃣ Configure RADIUS Using Ansible
 ➤ hosts
