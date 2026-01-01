@@ -83,7 +83,7 @@ Configure RADIUS Using Ansible
 
 ➤ Run
 ```bash
-ansible-playbook -i hosts AnsiblePlaybook/RADIUS.yml
+ansible-playbook -i hosts RADIUS.yml
 ```
 
 🔥 5️⃣ Hotspot Setup
